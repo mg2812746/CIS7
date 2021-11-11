@@ -24,20 +24,8 @@ void mstrMind(MstrMnd *x){
                         x->usrCode[2]=48+k;
                         x->usrCode[3]=48+z;
         cout<<x->key<<setw(5)<<x->usrCode;
-        //If correct code was not entered, provide a hint
-                        if(strstr(x->key,x->usrCode)==NULL){
-                            hint(x);
-                            cout<<endl;
-        //Otherwise, user entered the correct code. 
-                        }else{
-        //Congratulate user
-                        cout<<"\nCONGRATULATIONS!!! YOU WON THE GAME!";
-                        //End iteration
-                        i=10,
-                        j=10,
-                        k=10,
-                        z=10;
-                        }
+                        hint(x);
+                        cout<<endl;
                     }
                 }
             }

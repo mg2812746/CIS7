@@ -7,10 +7,7 @@
  */
 //Displays the appropriate hint
 void  dspHint(short red,short white,short empty){
-    //Display (correct) pegs
-    cout<<setw(5)<<red;
-    //Display (correct but in wrong spot) pegs
-    cout<<setw(5)<<white;
-    //Display (incorrect) pegs
-    cout<<setw(5)<<red+white<<endl;
+    cout<<setw(8)
+        <<red<<setw(17)<<white
+        <<setw(16)<<red+white<<endl;
 }
