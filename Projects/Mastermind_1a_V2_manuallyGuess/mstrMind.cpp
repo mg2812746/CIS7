@@ -13,10 +13,10 @@ void mstrMind(MstrMnd *x){
         <<"#right"<<setw(25)<<"#right in wrong spot"
         <<setw(7)<<"Sum"<<setw(25)<<"Enter code:";
     cin>>x->usrCode;
-    //Assign null terminator to end of string
-    x->usrCode[4]='\0';
     //Manually enter code
     for(int i=0;i<ATMPS;i++){
+        //Assign null terminator to end of string
+        x->usrCode[4]='\0';
         cout<<setw(5)<<x->key<<setw(10)<<x->usrCode;
         hint(x);
         cout<<setw(82)<<"Enter code:";
